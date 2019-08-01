@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="283px" height="122px" viewBox="0 0 283 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>sixr_logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="sixr_logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <path d="M61,25.1954538 C49.7087308,21.2582751 40.7421347,20.9594003 34.1002116,24.2988295 C24.137327,29.3079732 20.1521732,39.6631311 21.1484616,48.3427193 C22.1447501,57.0223075 27.1261924,59.9771168 35.0965001,63.9844318 C43.0668077,67.9917467 52.0334039,70.9297696 52.0334039,78.3975816 C52.0334039,85.8653937 42.0705193,85.8653937 35.0965001,83.8762153 C30.4471539,82.5500964 26.1299039,80.546439 22.1447501,77.8652429" id="Path" stroke="#FEBF10" stroke-width="8"></path>
+        <path d="M68,42.8054608 C54,36.7849829 43,35.447099 35,38.7918089 C23,43.8088737 20,52.8395904 20,60.8668942 C20,68.894198 25,74.9831681 34,79.9317406 C43,84.8803131 51,83.9862892 51,91.4914381 C51,98.996587 44,100 40,100 C37.3333333,100 33.6666667,98.996587 29,96.9897611" id="Path-Copy" stroke="#FEBF10" stroke-width="8" transform="translate(44.000000, 68.500000) rotate(180.000000) translate(-44.000000, -68.500000) "></path>
+        <path d="M88.5,21.9166667 L88.5,100.785714" id="Line" stroke="#34C6F4" stroke-width="8"></path>
+        <path d="M104.5,21.9166667 L104.5,100.785714" id="Line-Copy" stroke="#34C6F4" stroke-width="8"></path>
+        <polyline id="Path-2" stroke="#ED1A74" stroke-width="8" stroke-linejoin="round" points="142 22 154 43 167 22"></polyline>
+        <polyline id="Path-2-Copy" stroke="#ED1A74" stroke-width="8" stroke-linejoin="round" transform="translate(154.500000, 88.500000) scale(1, -1) translate(-154.500000, -88.500000) " points="140 76 154 101 169 76"></polyline>
+        <polyline id="Path-3" stroke="#ED1A74" stroke-width="8" stroke-linejoin="round" points="184 22 162 59 187 101"></polyline>
+        <polyline id="Path-3-Copy" stroke="#ED1A74" stroke-width="8" stroke-linejoin="round" transform="translate(134.500000, 61.500000) scale(-1, 1) translate(-134.500000, -61.500000) " points="144 22 122 59 147 101"></polyline>
+        <path d="M205,101 L205,23 C219.798135,23 228.206166,23 230.224093,23 C234.259948,23 241.322694,24 245.358549,26 C250.949012,28.7703984 256.856944,33.783089 258.475077,41 C260.493005,50 256.45715,59 250.403368,64 C246.367513,67.3333333 241.322694,69.3333333 235.268912,70 L257.466114,101" id="Path-4" stroke="#5BBA47" stroke-width="8" stroke-linejoin="round"></path>
+        <path d="M220,39 L230.931213,39 C234.9062,39 237.88744,39.9782609 239.874934,41.9347826 C242.856174,44.8695652 242.856174,50.7391304 238.881187,52.6956522 C236.231196,54 232.918707,54.326087 228.94372,53.673913" id="Path-5" stroke="#5BBA47" stroke-width="8"></path>
+        <polyline id="Path-6" stroke="#5BBA47" stroke-width="8" stroke-linejoin="round" points="220 101 220 75 238 101"></polyline>
+    </g>
+</svg>

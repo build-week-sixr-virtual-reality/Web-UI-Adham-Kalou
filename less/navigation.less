@@ -1,0 +1,152 @@
+header {
+    display: flex;
+    justify-content: space-between;
+
+    .hide {
+        @media (min-width: 850px){
+            display: none;
+        }
+
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer; 
+        color: #fedc7c;
+        font-size: 24px;
+    }
+
+    .logo {
+        img{
+        width: 30%;
+            }
+        }
+
+
+@media (max-width: 850px ){
+    .navigation-tab2 {
+        display: none;
+}    
+}
+}
+
+
+.navigation-tabs {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: @darkM;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+    text-align:center;
+
+a {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+    a:hover{
+        color: #f1f1f1;
+      }
+
+      .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        
+      }
+        
+        button {
+            font-size: 100%;
+            font-family: inherit;
+            border: none;
+            border-radius: 15px;
+            padding: 0.5rem 1.5rem;
+            margin: 0 1.1rem;
+            font-weight: bold;
+            @media @mobile {
+                display: none;
+            }
+        }
+                
+    .login {
+            border: 1px solid white;
+            background: none;
+            color: white;
+    }
+
+    .register {
+            border: none;
+            color: white;
+            background: @btngradient;
+    }
+}
+
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  .navigation-tab2 {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 70%;
+    text-align: center;   
+    
+    @media @tablet {
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .hidebig {
+        @media (min-width: 850px){
+            display: none;
+            
+        }
+      }
+
+a {
+        margin: 0 1rem;
+        font-size: 1.5rem;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        
+        button {
+            font-size: 100%;
+            font-family: inherit;
+            border: none;
+            border-radius: 15px;
+            padding: 0.5rem 1.5rem;
+            margin: 0 1.1rem;
+            font-weight: bold;
+            @media @mobile {
+                display: none;
+            }
+        }
+                
+    .login2 {
+            border: 1px solid white;
+            background: none;
+            color: white;
+    }
+
+    .register2 {
+            border: none;
+            color: white;
+            background: @btngradient;
+    }
+}
+}  

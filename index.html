@@ -4,7 +4,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SIXR - Home</title>
+        <title>SIXR Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400&display=swap" rel="stylesheet">
@@ -15,58 +16,91 @@
   <div class="box">
    <header class="navbartop">
 
+    <div class="hide">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </div>
+
     <div class="logo">
-     <a href="index.html"><h1>Logo</h1></a>
+        <a href="index.html">
+            <img src="img/sixr_logo.svg" alt="">
+        </a>
     </div>
 
 
-    <div class="navigation-tabs">
+    <div  class="navigation-tab2">
+            <a href="index.html">HOME</a>
+            <a href="#work">WORK</a>
+            <a href="#idservice">SERVICES</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="#blog">BLOG</a>
+            <a href="#contact">CONTACT</a>
+            <a href="signinup.html" ><button class= "login2">LOGIN</button></a>
+            <a href="signinup.html"><button class="register2">REGISTER</button></a>
+        </div>
+    
+
+
+    <div id="mySidenav" class="navigation-tabs">
+        <div class= "hidebig"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></div>
         <a href="index.html">HOME</a>
         <a href="#work">WORK</a>
-        <a href="#services">SERVICES</a>
-        <a href="#about">ABOUT US</a>
+        <a href="#idservice">SERVICES</a>
+        <a href="aboutus.html">ABOUT US</a>
         <a href="#blog">BLOG</a>
         <a href="#contact">CONTACT</a>
-        <a href="signinup.html"><button>LOGIN</button></a>
-        <a href="signinup.html"><button>REGISTER</button></a>
+        <a href="signinup.html" ><button class= "login">LOGIN</button></a>
+        <a href="signinup.html"><button class="register">REGISTER</button></a>
     </div>
+
+    
+
    </header>
 
+   <div id="main">
 
    <section class="image-topwtext">
-    <img src="img/.jpg" alt="">    
-    <div class="center-left">
-        <h1>Explore<br>Alternative<br>Realities<br></h1>
-        <button>READ ARTICLE &emsp;&emsp;></button>
+       <div class="image-inside-text">
+    <img src="img/vr-painting.jpg" alt="" style="width:100%;">  
+    
+
+
+        <div class="disktopview-center">
+            <h1>
+                Explore<br>Alternative<br>Realities<br>
+            </h1>
+            <button>READ ARTICLE &emsp;&emsp;></button>
+        </div>
     </div>
+
    </section>
 
    <section class="mid-text">
-
+        <div id="idservice">
      <div class="service-intro">
         <h1>Lorem Ipsum Dolor</h1>
         <p>text</p>
      </div>
 
-     <div class="services">
+     <div class="services-provide">
       <div>
-        <i class="far fa-user-circle"></i>
+        <i class="fas fa-user-circle fa-4x"></i>
         <h2>Magna Aliqua</h2>
         <p>text</p>
       </div>
 
       <div>
-        <i class="fas fa-laptop"></i>
+        <i class="fas fa-laptop fa-4x"></i>
         <h2>Consectetur Elit</h2>
         <p>text</p>
       </div>
 
       <div>
-        <i class="fas fa-store"></i>
+        <i class="fas fa-store fa-4x"></i>
         <h2>Minim Veniam</h2>
         <p>text</p>
         </div>
    </div>
+        </div>
             
             
             
@@ -86,11 +120,14 @@
 
    <footer>
     <section class="footer">
-     <div class="footer-longesttext">
-        <h4>GRADA</h4>
-        <p>text</p>
-     </div>
-
+        <div class="logo">
+            <ul><a href="#home"><img src="img/sixr_logo.svg" alt=""></a>
+             <li><i class="far fa-envelope"></i>&emsp;Email: needed</li>
+             <li><i class="fas fa-phone"></i>&emsp;Phone: needed</li>
+             <li><i class="fas fa-map-marker-alt"></i>&emsp;Address: needed</li>
+            </ul>
+               
+        </div>
      <div class="footer-company">
         <h4>COMPANY</h4>
         <ul>
@@ -137,8 +174,18 @@
     </div>
    </footer>
   </div>
+</div>
  </body>
 </html>
 
+<script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+</script>
 
 <script src="index.js" async defer></script>

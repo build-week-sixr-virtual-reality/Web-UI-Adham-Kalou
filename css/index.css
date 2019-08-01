@@ -1,1 +1,430 @@
-/*setup*/
+/*
+header {
+    display: flex;
+    justify-content: space-between;
+
+    .hide {
+        @media (min-width: 850px){
+            display: none;
+        }
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer; 
+        color: #fedc7c;
+        font-size: 24px;
+    }
+
+    .logo {
+        img{
+        width: 30%;
+            }
+        }
+}
+
+.navigation-tabs {
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        width: 70%;
+        text-align: center;   
+        
+        @media @tablet {
+            flex-direction: column;
+            width: 100%;
+            font-size: 1.3rem;
+        }
+
+        .hidebig {
+            @media (min-width: 850px){
+                display: none;
+                
+            }
+          }
+
+    a {
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            
+            button {
+                font-size: 100%;
+                font-family: inherit;
+                border: none;
+                border-radius: 15px;
+                padding: 0.5rem 1.5rem;
+                margin: 0 1.1rem;
+                font-weight: bold;
+                @media @mobile {
+                    display: none;
+                }
+            }
+                    
+        .login {
+                border: 1px solid white;
+                background: none;
+                color: white;
+        }
+
+        .register {
+                border: none;
+                color: white;
+                background: @btngradient;
+        }
+    }
+
+}
+ */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 50%;
+}
+html .day {
+  font-family: 'Condensed Open Sans', sans-serif;
+  background-color: #2d4059;
+}
+html .day .box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
+}
+h2 {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+h4 {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  line-height: 1rem;
+  font-size: 4rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 0px) and (max-width: 850px) {
+  body .hide {
+    display: block;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .hide {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: #fedc7c;
+  font-size: 24px;
+}
+@media (min-width: 850px) {
+  header .hide {
+    display: none;
+  }
+}
+header .logo img {
+  width: 30%;
+}
+@media (max-width: 850px) {
+  header .navigation-tab2 {
+    display: none;
+  }
+}
+.navigation-tabs {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2d4059;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0px;
+  text-align: center;
+}
+.navigation-tabs a {
+  padding: 8px 8px 8px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.navigation-tabs a a:hover {
+  color: #f1f1f1;
+}
+.navigation-tabs a .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.navigation-tabs a button {
+  font-size: 100%;
+  font-family: inherit;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 1.5rem;
+  margin: 0 1.1rem;
+  font-weight: bold;
+}
+@media (max-width:551px) {
+  .navigation-tabs a button {
+    display: none;
+  }
+}
+.navigation-tabs a .login {
+  border: 1px solid white;
+  background: none;
+  color: white;
+}
+.navigation-tabs a .register {
+  border: none;
+  color: white;
+  background: linear-gradient(to left, #febf10, #f0438d);
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.navigation-tab2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  text-align: center;
+}
+@media (max-width:851px) {
+  .navigation-tab2 {
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 850px) {
+  .navigation-tab2 .hidebig {
+    display: none;
+  }
+}
+.navigation-tab2 a {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.navigation-tab2 a button {
+  font-size: 100%;
+  font-family: inherit;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 1.5rem;
+  margin: 0 1.1rem;
+  font-weight: bold;
+}
+@media (max-width:551px) {
+  .navigation-tab2 a button {
+    display: none;
+  }
+}
+.navigation-tab2 a .login2 {
+  border: 1px solid white;
+  background: none;
+  color: white;
+}
+.navigation-tab2 a .register2 {
+  border: none;
+  color: white;
+  background: linear-gradient(to left, #febf10, #f0438d);
+}
+footer {
+  color: white;
+  text-align: left;
+}
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+footer .footer .logo {
+  width: 30%;
+  margin-right: 10rem;
+}
+footer .footer .logo img {
+  width: 10rem;
+}
+footer .footer .logo h4 {
+  font-size: 2rem;
+}
+footer .footer .logo p {
+  font-size: 2rem;
+  line-height: 2;
+}
+footer .footer div {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+}
+footer .footer div ul {
+  padding: 0;
+}
+@media (max-width:551px) {
+  footer .footer .footer-resources-2 {
+    display: none;
+  }
+}
+footer .footer div {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+}
+footer .footer div ul {
+  padding: 0;
+}
+@media (max-width:551px) {
+  footer .footer .footer-resources-2 {
+    display: none;
+  }
+}
+footer .copyright {
+  margin-left: 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+.image-topwtext {
+  width: 100%;
+}
+.image-topwtext .image-inside-text {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.image-topwtext .image-inside-text .disktopview-center {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  text-align: center;
+}
+.image-topwtext .image-inside-text .disktopview-center button {
+  font-size: 100%;
+  font-family: inherit;
+  border-radius: 20px;
+  padding: 0 1.5rem;
+  height: 3rem;
+  width: 15rem;
+  margin: 0 10.5rem;
+  border: none;
+  color: white;
+  background: linear-gradient(to left, #febf10, #f0438d);
+  font-weight: bold;
+}
+.image-topwtext h1 {
+  color: white;
+  font-size: 6rem;
+  text-shadow: 1px 2px 3px black;
+  line-height: 1;
+  letter-spacing: 0.3rem;
+}
+.mid-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.mid-text h2 {
+  font-size: 2rem;
+}
+.mid-text p {
+  font-weight: 300;
+  font-family: 'Open sans condensed', sans-serif;
+}
+.mid-text #idservice {
+  color: #fedc7c;
+}
+.mid-text #idservice i {
+  color: #f0438d;
+  display: block;
+  background: -webkit-linear-gradient(#febf10, #f0438d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mid-text #idservice .service-intro h1 {
+  margin: 10% 0 2.5% 0;
+}
+.mid-text #idservice .service-intro p {
+  margin: 0 15%;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+.mid-text #idservice .services-provide {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5%;
+}
+.mid-text #idservice .services-provide div {
+  width: 30%;
+}
+.mid-text .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.mid-text .about .about-image {
+  height: 300px;
+  width: 100%;
+  background-color: #f0438d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid-text .about .about-text {
+  padding-bottom: 5%;
+  color: white;
+  background: -webkit-linear-gradient(#E6746C, #AF5BD8);
+}
+.mid-text .about h2 {
+  margin-top: 7%;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+.mid-text .about p {
+  margin: auto 15%;
+}
+.mid-text .about button {
+  font-size: 1.2rem;
+  font-family: inherit;
+  border-radius: 15px;
+  padding: 0 1.1rem;
+  height: 3rem;
+  width: 15rem;
+  margin: 2.5rem 1.1rem 0;
+  background: white;
+  font-weight: bold;
+  border: none;
+}
