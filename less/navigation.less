@@ -1,6 +1,31 @@
 header {
+    .daynightbox{
+        width: 15rem;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        text-align: center; 
+    }
+    .nightlight{
+        background-color: @lightM;
+        color: #2D4059;
+        p{
+            color: #2D4059;
+        }
+    }
+    button{
+        padding: 0;
+        font-size: 2.5rem;
+        background-color: transparent;
+        align-self: center;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        color: #fedc7c;
+    }
     display: flex;
     justify-content: space-between;
+    margin: 2rem 0;
 
     .hide {
         @media (min-width: 850px){
@@ -8,7 +33,6 @@ header {
         }
 
         position: absolute;
-        top: 10px;
         right: 20px;
         cursor: pointer; 
         color: #fedc7c;
@@ -91,10 +115,15 @@ a {
 }
 
 }
+
+
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+
 
 
   .navigation-tab2 {

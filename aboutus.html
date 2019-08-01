@@ -4,10 +4,183 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SIXR - Home</title>
+        <title>SIXR Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
-</html>
+
+ <body class= "day">
+  <div class="box">
+   <header class="navbartop">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/sixr_logo.svg" alt="">
+        </a>
+    </div>
+
+
+    <div class="daynightbox">
+    <div class="hide">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </div>
+    
+    <button class="day-night-btn"><i class="fas fa-adjust"></i></button>
+    </div>
+    
+    <div  class="navigation-tab2">
+            <a href="index.html">HOME</a>
+            <a href="#work">WORK</a>
+            <a href="index.html#idservice">SERVICES</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="#blog">BLOG</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="signinup.html" ><button class= "login2">LOGIN</button></a>
+            <a href="signinup.html"><button class="register2">REGISTER</button></a>
+        </div>
+    
+
+
+    <div id="mySidenav" class="navigation-tabs">
+        <div class= "hidebig"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></div>
+        <a href="index.html">HOME</a>
+        <a href="#work">WORK</a>
+        <a href="#idservice">SERVICES</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="#blog">BLOG</a>
+        <a href="#contact">CONTACT</a>
+        <a href="signinup.html" ><button class= "login">LOGIN</button></a>
+        <a href="signinup.html"><button class="register">REGISTER</button></a>
+    </div>
+</div>
+    
+
+   </header>
+  
+     <div id="main">
+            <div>
+                    <h1 class="about-us">MEET THE TEAM</h1>
+                </div>
+                <section class="team-boxes">
+            
+                    <div class="teammembr" >
+                        <h2>Vital Boisset, UX Developer</h2>
+                        <p>Created the over all style and flow of the app. Used Figma to create user flows and diagrams.</p>
+                        <a href="https://www.linkedin.com/in/vital-boisset/"><button><i class="fab fa-linkedin fa-2x"></i></button></a>
+                    </div> 
+                    <div class="teammembr">
+                        <h2>Jeremy Brady, React Developer</h2>
+                        <p>Contributed to the React development specializing in the redux functionality of the overall app. Helped reformat and refactor code to satisfy design lifecycles as needed.</p>
+                        <a href="https://github.com/jeremybrady702"><button><i class="fab fa-github fa-2x"></i></button></a>
+                    </div>
+                    <div class="teammembr">
+                        <h2>Hamidou Diallo, React Developer</h2>
+                        <p>Network requests, 3rd party API, React Component development and architecture, proper usage of React Router</p>
+                        <a href="https://github.com/hamidoudiallo96"><button><i class="fab fa-github fa-2x"></i></button></a>
+                    </div>
+                    <div class="teammembr">
+                        <h2>Michael Harris, React Developer</h2>
+                        <p>Contributed to front end development.</p>
+                        <a href="https://github.com/imMichaelHarris"><button><i class="fab fa-github fa-2x"></i></button></a>
+                    </div>
+                    <div class="teammembr">
+                        <h2>Marques Johnson, React Developer</h2>
+                        <p>Network requests, 3rd party API, React Component development and architecture, proper usage of React Router</p>
+                        <a href="https://github.com/MarquesJ8023"><button><i class="fab fa-github fa-2x"></i></button></a>
+                    </div>
+                    <div class="teammembr">
+                        <h2>Adham Kalou, Web UI Developer</h2>
+                        <p>Worked with UX to implement app designs, using Less, CSS and some JavaScript.</p>
+                        <a href="https://github.com/Adhamkalou"><button><i class="fab fa-github fa-2x"></i></button></a>
+                    </div>
+                    <div class="teammembr">
+                        <h2>Seth Nadu, React Developer</h2>
+                        <p>Network requests, 3rd party API, React Component development and architecture, proper usage of React Router</p>
+                        <a href="https://github.com/sethnadu"><button><i class="fab fa-github fa-2x"></i></button></a>
+                    </div>
+                    <div class="teammembr">
+                        <h2>Brandon Porter, Data Engineer</h2>
+                        <p>Supplied access to the database that allows data persistence between sessions and people.</p>
+                        <a href="https://github.com/AshenPheonix"><button><i class="fab fa-github fa-2x"></i></button></a>
+                    </div>
+                    <div class="teammembr">
+                            <h2>Emma Zarate, Web UI Developer</h2>
+                            <p>Worked with UX to implement app designs, using Less, CSS and some JavaScript.</p>
+                            <a href="https://github.com/yoshimii"><button><i class="fab fa-github fa-2x"></i></button></a>
+                    </div>
+                </section>
+
+                <footer>
+                        <section class="footer">
+                            <div class="logo">
+                                <ul><a href="#home"><img src="img/sixr_logo.svg" alt=""></a>
+                                 <li><i class="far fa-envelope"></i>&emsp;Email: needed</li>
+                                 <li><i class="fas fa-phone"></i>&emsp;Phone: needed</li>
+                                 <li><i class="fas fa-map-marker-alt"></i>&emsp;Address: needed</li>
+                                </ul>
+                                   
+                            </div>
+                         <div class="footer-company">
+                            <h4>COMPANY</h4>
+                            <ul>
+                                <li>About Us</li>
+                                <li>Our Services</li>
+                                <li>The Team</li>
+                                <li>Investors</li>
+                            </ul>
+                         </div>
+                    
+                         <div class=footer-resources>
+                            <h4>RESOURCES</h4>
+                            
+                            <ul>
+                                <li>News & Insight</li>
+                                <li>Documentation</li>
+                                <li>Downloads</li>
+                                <li>Knowledge Base</li>
+                            </ul>
+                         </div>
+                    
+                         <div class="footer-suppoort">
+                            <h4>SUPPORT</h4>
+                            <ul>
+                                <li>CONTACT US</li>
+                                <li>FAQs</li>
+                                <li>Live Chat</li>
+                            </ul>
+                         </div>
+                    
+                         <div class="footer-resources2">   
+                            <h4>RESOURCES</h4>
+                            <ul>
+                                <li>Twitter</li>
+                                <li>Facebook</li>
+                                <li>Dribble</li>                                
+                            </ul>
+                         </div>
+                        </section>
+                    
+                        <div class="copyright">
+                            <div>Copyright 2018 Grada. All rights reserved.</div>
+                            <div>Terms & Conditions&emsp;Privacy Policy</div>
+                        </div>
+                       </footer>
+    </div>
+   </body>
+  </html>
+  
+  <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+  </script>
+  
+  <script src="index.js" async defer></script>
+  

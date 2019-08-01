@@ -1,84 +1,8 @@
-/*
-header {
-    display: flex;
-    justify-content: space-between;
-
-    .hide {
-        @media (min-width: 850px){
-            display: none;
-        }
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        cursor: pointer; 
-        color: #fedc7c;
-        font-size: 24px;
-    }
-
-    .logo {
-        img{
-        width: 30%;
-            }
-        }
-}
-
-.navigation-tabs {
-        display: flex;
-        justify-content: space-around; 
-        align-items: center;
-        width: 70%;
-        text-align: center;   
-        
-        @media @tablet {
-            flex-direction: column;
-            width: 100%;
-            font-size: 1.3rem;
-        }
-
-        .hidebig {
-            @media (min-width: 850px){
-                display: none;
-                
-            }
-          }
-
-    a {
-            margin: 0 1rem;
-            font-size: 1.5rem;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            
-            button {
-                font-size: 100%;
-                font-family: inherit;
-                border: none;
-                border-radius: 15px;
-                padding: 0.5rem 1.5rem;
-                margin: 0 1.1rem;
-                font-weight: bold;
-                @media @mobile {
-                    display: none;
-                }
-            }
-                    
-        .login {
-                border: 1px solid white;
-                background: none;
-                color: white;
-        }
-
-        .register {
-                border: none;
-                color: white;
-                background: @btngradient;
-        }
-    }
-
-}
- */
 * {
   box-sizing: border-box;
+}
+* .nightlight {
+  background-color: #999999;
 }
 html {
   font-size: 50%;
@@ -122,13 +46,65 @@ ul {
     display: block;
   }
 }
+.night {
+  color: #2D4059;
+  transition: all 3s linear;
+  background-color: #999999;
+}
+.night h1,
+.night h2,
+.night h3,
+.night h4,
+.night h5 {
+  font-family: "Russo One", sans-serif;
+  color: #2D4059;
+}
+.night p {
+  color: #2D4059;
+}
+.night .header {
+  background-color: #999999;
+  color: #2D4059;
+  transition: all 1s linear;
+}
+.night .header nav a {
+  color: #2D4059;
+}
+.night footer {
+  background: #999999;
+  color: #2D4059;
+}
 header {
   display: flex;
   justify-content: space-between;
+  margin: 2rem 0;
+}
+header .daynightbox {
+  width: 15rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+header .nightlight {
+  background-color: #999999;
+  color: #2D4059;
+}
+header .nightlight p {
+  color: #2D4059;
+}
+header button {
+  padding: 0;
+  font-size: 2.5rem;
+  background-color: transparent;
+  align-self: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  color: #fedc7c;
 }
 header .hide {
   position: absolute;
-  top: 10px;
   right: 20px;
   cursor: pointer;
   color: #fedc7c;
@@ -317,6 +293,9 @@ footer .copyright {
   display: flex;
   justify-content: space-between;
 }
+.nightlight ul {
+  color: #2D4059;
+}
 .image-topwtext {
   width: 100%;
 }
@@ -427,4 +406,76 @@ footer .copyright {
   background: white;
   font-weight: bold;
   border: none;
+}
+h1 {
+  color: #fedc7c;
+  text-align: center;
+  margin: 2rem;
+}
+.team-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width:551px) {
+  .team-boxes {
+    display: flex;
+    flex-direction: column;
+    margin: 0 25%;
+  }
+}
+.team-boxes .teammembr {
+  display: grid;
+  background: #9FA8B3;
+  width: 30rem;
+  height: 30rem;
+}
+.team-boxes h2 {
+  color: #fedc7c;
+  padding: 0 2rem;
+}
+.team-boxes p {
+  color: #FEBF10;
+  font-size: 2rem;
+  justify-items: center;
+  line-height: 2rem;
+  padding-left: 1rem;
+}
+.team-boxes button {
+  font-size: 100%;
+  font-family: inherit;
+  height: 3rem;
+  width: 15rem;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+}
+.night {
+  color: #2D4059;
+  transition: all 3s linear;
+  background-color: #999999;
+}
+.night h1,
+.night h2,
+.night h3,
+.night h4,
+.night h5 {
+  font-family: "Russo One", sans-serif;
+  color: #2D4059;
+}
+.night p {
+  color: #2D4059;
+}
+.night .header {
+  background-color: #999999;
+  color: #2D4059;
+  transition: all 1s linear;
+}
+.night .header nav a {
+  color: #2D4059;
+}
+.night footer {
+  background: #999999;
+  color: #2D4059;
 }
