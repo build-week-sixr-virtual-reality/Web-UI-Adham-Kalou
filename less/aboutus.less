@@ -1,0 +1,82 @@
+
+h1 {
+    color: @threeservi;
+    text-align: center;
+    margin: 2rem;
+}
+
+.team-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 0 25%; 
+    }
+
+    .teammembr {
+        display: grid;
+        background: #9FA8B3;
+        width: 30rem;
+        height: 30rem
+
+    }
+    h2 {
+        color: @threeservi;
+        padding: 0 2rem;
+    }
+
+    p {
+        color: #FEBF10;
+        font-size: 2rem;
+        justify-items: center;
+        line-height: 2rem;
+        padding-left: 1rem;
+    }
+    button {
+        font-size: 100%;
+        font-family: inherit;
+        border: none;
+        height: 3rem;
+        width: 15rem;
+        border: none;
+        background: transparent;
+        font-weight: bold;
+        
+    }
+}
+
+.night {
+    color: @darktext;
+    transition: all 3s linear;
+    background-color: @lightM;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Russo One", sans-serif;
+      color: @darktext;
+    }
+    p{
+      color: @darktext;
+    }
+    .header {
+      background-color: @lightM;
+      color: @darktext;
+      transition: all 1s linear;
+      nav {
+        a {
+          color: @darktext;
+        }
+      }
+    }
+    footer {
+      background: @lightM;
+      color: @darktext;
+   }
+  }

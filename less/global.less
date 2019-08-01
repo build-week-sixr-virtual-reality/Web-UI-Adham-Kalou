@@ -1,7 +1,11 @@
 //box sizing
 * {
     box-sizing: border-box;
+    .nightlight{
+      background-color: @lightM;
+  }
 }
+
 
 html {
   font-size: 50%;
@@ -60,4 +64,38 @@ ul {
 
     }
   }
+}
+
+
+//
+
+.night {
+  color: @darktext;
+  transition: all 3s linear;
+  background-color: @lightM;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Russo One", sans-serif;
+    color: @darktext;
+  }
+  p{
+    color: @darktext;
+  }
+  .header {
+    background-color: @lightM;
+    color: @darktext;
+    transition: all 1s linear;
+    nav {
+      a {
+        color: @darktext;
+      }
+    }
+  }
+  footer {
+    background: @lightM;
+    color: @darktext;
+ }
 }

@@ -8,12 +8,12 @@ btn.addEventListener('click', () => {
     if (body.className === 'day') {
         body.classList.remove('day');
         body.classList.add('night');
-        btn.style.color = 'white';
+        btn.style.color = '#2D4059';
 
     } else if (body.className === 'night') {
         body.classList.remove('night');
         body.classList.add('day');
-        btn.style.color = 'black';
+        btn.style.color = '#fedc7c';
     } 
 })
 
