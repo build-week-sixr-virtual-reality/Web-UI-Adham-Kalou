@@ -163,11 +163,6 @@ header .logo img {
   margin: 0 1.1rem;
   font-weight: bold;
 }
-@media (max-width:551px) {
-  .navigation-tabs a button {
-    display: none;
-  }
-}
 .navigation-tabs a .login {
   border: 1px solid white;
   background: none;
@@ -356,14 +351,17 @@ footer .copyright {
   margin: 10% 0 2.5% 0;
 }
 .mid-text #idservice .service-intro p {
-  margin: 0 15%;
-  line-height: 1.5;
+  margin: 5rem 0rem;
   font-weight: lighter;
+  line-height: 5rem;
 }
 .mid-text #idservice .services-provide {
   display: flex;
   justify-content: space-around;
   margin-top: 2.5%;
+}
+.mid-text #idservice .services-provide p {
+  line-height: 5rem;
 }
 .mid-text #idservice .services-provide div {
   width: 30%;
@@ -375,9 +373,9 @@ footer .copyright {
   color: white;
 }
 .mid-text .about .about-image {
-  height: 300px;
+  height: 10rem;
   width: 100%;
-  background-color: #f0438d;
+  background: -webkit-linear-gradient(#E6746C, #AF5BD8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,7 +391,7 @@ footer .copyright {
   font-size: 3rem;
 }
 .mid-text .about p {
-  margin: auto 15%;
+  line-height: 5.2rem;
 }
 .mid-text .about button {
   font-size: 1.2rem;
@@ -402,7 +400,7 @@ footer .copyright {
   padding: 0 1.1rem;
   height: 3rem;
   width: 15rem;
-  margin: 2.5rem 1.1rem 0;
+  margin: 0 1.1rem;
   background: white;
   font-weight: bold;
   border: none;
