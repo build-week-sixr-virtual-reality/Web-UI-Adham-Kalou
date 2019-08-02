@@ -411,34 +411,56 @@ h1 {
   margin: 2rem;
 }
 .team-boxes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-gap: 5%;
+  grid-template: [row1-start] "member-1 member-2 member-3" 1fr [row1-end] [row2-start] "member-4 member-5 member-6" 1fr [row2-end] [row3-start] "member-7 member-8 member-9" 1fr [row3-end] / 1fr 1fr 1fr;
 }
 @media (max-width:551px) {
   .team-boxes {
     display: flex;
     flex-direction: column;
-    margin: 0 25%;
   }
 }
 .team-boxes .teammembr {
   display: grid;
   background: #9FA8B3;
-  width: 30rem;
-  height: 30rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  justify-items: center;
+  margin: 1rem 0rem;
+}
+.team-boxes .teammembr img {
+  max-width: 240px;
+  max-height: 240px;
+  transition: transform 1s 1s, background 1s 1s;
+}
+@media (max-width:851px) {
+  .team-boxes .teammembr img {
+    max-width: 150px;
+  }
+}
+@media (max-width:551px) {
+  .team-boxes .teammembr img {
+    max-width: 300px;
+    max-height: 300px ;
+  }
 }
 .team-boxes h2 {
   color: #fedc7c;
-  padding: 0 2rem;
+  font-family: 'Open sans condensed', sans-serif;
+  margin-top: 1.1rem;
+  margin-bottom: 0;
+}
+@media (max-width:551px) {
+  .team-boxes h2 {
+    margin-bottom: 0;
+  }
 }
 .team-boxes p {
   color: #FEBF10;
-  font-size: 2rem;
   justify-items: center;
   line-height: 2rem;
-  padding-left: 1rem;
+  font-size: 2rem;
+  padding: 0 5%;
 }
 .team-boxes button {
   font-size: 100%;
@@ -448,6 +470,17 @@ h1 {
   border: none;
   background: transparent;
   font-weight: bold;
+  cursor: pointer;
+}
+@media (max-width:851px) {
+  .team-boxes button {
+    width: 6rem;
+  }
+}
+@media (max-width:551px) {
+  .team-boxes button {
+    margin-bottom: 3rem;
+  }
 }
 .night {
   color: #2D4059;
